@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #597CFF;
+    background-color: #1FBB7F;
 }
 .heading .caption .short{
     text-align: center;
@@ -20,12 +20,16 @@ body{
 text-align: center;
 font-size: 2rem;
 }
-.premuim{
+.flex-container{
     display: flex;
     align-items: center;
    gap:30rem;
+   /* background-color: black; */
+   margin-block: 3rem;
+   padding-block: 1rem;
    
 }
+
 .premuim .stall img{
     animation: slide-right 2s forwards;
 }
@@ -33,24 +37,36 @@ font-size: 2rem;
     width: 50ch;
     animation:slide-left 2s forwards;
     font-size: 2rem;
-    color: aquamarine;
+    color: white;
 }
 .economy{
     display: flex;
     align-items: center;
    gap:30rem;
+   background-color: black;
+   margin-block: 3rem;
+   padding-block: 1rem;
    
 }
 .economy .stall img{
     animation:slide-left 2s forwards;
 }
 .economy .text{
-    animation: slide-right 2s forwards;
+    animation: slide-right-eco-text 2s forwards;
     width: 50ch;
+    color: white;
+    font-size: 2rem;
+}
+.basic{
+    display: grid;
 }
 @keyframes slide-right{
     0% { transform: translateX(-100%); }
     100% { transform: translateX(100%); }
+}
+@keyframes slide-right-eco-text{
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(40%); }
 }
 @keyframes slide-left{
     0% { transform: translateX(100%); }
