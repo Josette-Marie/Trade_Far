@@ -1,0 +1,356 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font:100%;
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height:15vh;
+    width:100%;
+    position: fixed;
+    z-index:999;
+}
+.above{
+    display: flex;
+    justify-content: space-between;
+    width:90%
+}
+.space{
+    width: 5%;
+}
+
+.above img{
+    width:7vw;
+}
+.link ul{
+    display:flex ;
+    gap:2rem;
+    margin-top: 3rem;
+}
+.link ul li a{
+   text-decoration: none;
+   color: white;
+   font-size: 1.5rem;
+}
+.link ul li a button{
+   padding: 0.5em;
+   background-color: rgb(104, 104, 146);
+   width:9vw;
+   border-radius: 35px;
+   cursor: pointer;
+}
+.link ul li a button:hover{
+    background-color: rgb(156, 79, 79);
+}
+.main{
+    width:100%;
+   background-color: #1FBB7F;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+}
+.main .caption h1{
+    margin-inline: 10rem;
+    padding-top: 5rem;
+    font-size: 5rem;
+}
+far:hover{
+    color: orangered;
+}
+.main .caption h3{
+    margin-inline: 6rem;
+    width: 70%;
+    text-align: center;
+    font-size: 2rem ;
+}
+.right img{
+    width:42vw;
+    margin-top: 10rem;
+    
+}
+.caption .btn{
+    margin-left: 15rem;
+    margin-top: 1.5rem;
+}
+.caption .btn button{
+    width:25%;
+    padding: 1em;
+    border-radius: 35px;
+    text-align: center;
+    background-color: #E33924;
+}
+.caption .btn button:hover{
+    background-color: #597CFF;
+}
+.media{
+    font-size: 2rem;
+    text-align: center;
+    width:87%;
+    margin-top: 0.75rem;
+}
+.media i{
+    margin-left: 0.5rem;
+}
+   
+.everything{
+    background-color: black;
+}
+.services{
+    text-align: center;
+    padding-top: 3rem;
+    color:whitesmoke;
+    
+}
+.services .heading{
+    font-size: 4rem;
+}
+.services .convince{
+    font-size: 1.5rem;
+    
+    
+}
+.service{
+display: flex;
+gap:1rem;
+padding-block: 1rem;
+height: 45vh;
+color: whitesmoke;
+
+}
+.service>div{
+   width:25%;
+}
+.service img{
+    width: 100px;
+    background-color: #EFE3D4;
+    border-radius: 50%;
+    padding:1rem;
+    margin-bottom: 1rem;
+}
+.service .text{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 0.25rem;
+ }
+ .service img {
+    margin-block: 1rem;
+    margin-left: 8rem;
+    transition: transform 0.5s ease, background-color 0.5s ease-in-out;
+    animation: slide 2s ease-in-out infinite;
+}
+
+@keyframes slide {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.125); }
+    50% { transform: scale(1.25); }
+    75% { transform: scale(1.375); }
+    100% { transform: scale(1.5); background-color: #597CFF; }
+}
+
+
+.service.text{
+    margin-inline: 7rem;
+}
+.service .story {
+    text-align: center;
+    padding-inline: 1rem;
+    font-size: rem;
+}
+.service button{
+    padding: 0.5em;
+    background-color: #1FBB7F;
+    width:9vw;
+    border-radius: 35px;
+    margin: 1rem 6rem;
+    cursor: pointer;
+  
+}
+.service button:hover{
+    background-color: #c1594d;
+
+}
+.us {
+    background-color: #1FBB7F;
+}
+.us .heading {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 5rem;
+    color: black;
+}
+.us .everything2 {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+ 
+}
+.us .man img {
+    width: 40vw;
+   
+}
+.reasons {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.reasons .n {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    margin-block: 1rem;
+}
+.reasons .number {
+    font-size: 2em;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 50%;
+    width: 5%;
+    padding: 0.75rem;
+    text-align: center;
+    color: white;
+}
+.reasons .text {
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+    flex: 1;
+    color: black;
+}
+.reasons .number:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .message {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+footer .up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .trade, footer .right, footer .follow {
+    flex: 1;
+    margin: 10px;
+}
+
+footer .trade #logo p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+footer .trade .text {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer .right .Support, footer .right .Navigation {
+    margin-bottom: 20px;
+}
+
+footer .right p {
+    margin: 5px 0;
+}
+
+footer .right #blue {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer .follow a:hover {
+    color:#1FBB7F;
+}
+footer .newsletter{
+    margin-top: 2rem;
+}
+footer .newsletter button{
+    padding: 0.5em;
+    background-color: #1FBB7F;
+    width:9vw;
+    border-radius: 35px;
+}
+footer .newsletter input{
+ text-align: center;
+ border-radius: 35px;
+ padding: 0.5rem;
+ margin-top: 1rem;
+}
+
+
+#phone{
+    font-size: 2rem;
+    position: fixed;
+    right:25px;
+    bottom: 20px;
+    border:1px solid black;
+    padding:1.5rem;
+    border-radius: 50%;
+    background-color: black;
+}
+ .tooltip{
+    position:fixed;
+    right:2%;
+    bottom: 12%;
+    width:12ch;
+    text-align: center;
+    color:#FDBD00;
+    transform:translateX(10%);
+    border:1px solid black;
+    border-radius: 20px;
+    padding:0.45rem;
+    background-color: black;
+    opacity: 0;
+}
+.tooltip::before{
+    content:"";
+    position:absolute;
+    border: 15px solid  ;
+    left:50%;
+    top:52px;
+   transform: translateX(-50%);
+   border-color: goldenrod transparent transparent transparent;
+}
+.agent:hover .tooltip {
+    opacity: 1;
+}
+
+
+
+
+
+
+

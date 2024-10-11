@@ -1,0 +1,98 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.heading {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10rem;
+    text-align: center;
+    
+}
+.heading .caption .short{
+    font-size: 2rem;
+    padding-block: 2rem;
+    animation: right 2s ;
+}
+
+.heading .caption .long{
+    font-size: 1.5rem;
+    color: black;
+    animation: left 2s ;
+}
+@keyframes right{
+    0%{ transform: translateX(100%);}
+    100%{ transform: translateX(0%);}
+}
+@keyframes left{
+    0%{ transform: translateX(-100%);}
+    100%{ transform: translateX(0%);}
+}
+
+.stalls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 5rem;
+}
+.stalls .title{
+    text-align: center;
+    padding-block: 2rem;
+    font-size: 2rem;
+}
+
+.premuim, .economy, .basic {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.premuim img, .economy img, .basic img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.stalls div {
+    animation: fadeIn 2s ease-in-out;
+}
+.premuim:hover, .economy:hover, .basic:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+

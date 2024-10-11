@@ -228,43 +228,88 @@ color: whitesmoke;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-footer{
+footer {
     background-color: black;
     color: white;
-    position: relative;
-    height:40vh;
-}
-#blue{
-    color: #597CFF;
-   padding:1rem 2rem 0.5rem;
-   text-align: center;
-
-}
-footer .up{
-    margin-left: 5rem;
-    width:50%;
-    display: flex;
-    align-items: center;
-    gap:20rem
-}
-.trade .text{
-    width:35ch
-}
-
-footer .right{
-    display: flex;
+    padding: 20px 0;
     text-align: center;
-    border: 1px solid red;
 }
 
-.right p{
-   display: grid;
-    margin-top: 0.5rem;
+footer .message {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 }
-.follow{
-    border: 1px solid red;
-    width:100%;
+
+footer .up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
+
+footer .trade, footer .right, footer .follow {
+    flex: 1;
+    margin: 10px;
+}
+
+footer .trade #logo p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+footer .trade .text {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer .right .Support, footer .right .Navigation {
+    margin-bottom: 20px;
+}
+
+footer .right p {
+    margin: 5px 0;
+}
+
+footer .right #blue {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer .follow a:hover {
+    color:#1FBB7F;
+}
+footer .newsletter{
+    margin-top: 2rem;
+}
+footer .newsletter button{
+    padding: 0.5em;
+    background-color: #1FBB7F;
+    width:9vw;
+    border-radius: 35px;
+}
+footer .newsletter input{
+ text-align: center;
+ border-radius: 35px;
+ padding: 0.5rem;
+ margin-top: 1rem;
+}
+
 
 #phone{
     font-size: 2rem;

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Fair Login</title>
+    <link rel="stylesheet" href="css/try.css">
+    <script src="https://kit.fontawesome.com/c85664c924.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+    <div class="flex-container">
+        <section class="picture">
+            <img src="images/people.svg" alt="" class="right">
+            <h1>TRADE NEAR, TRADE FAR, TRADE HERE!</h1>
+        </section>
+        <section class="login-container">
+            <div class="logo">
+                <img src="images/Logo.svg" alt="Company Logo">
+            </div>
+            <div>
+                <p>Welcome Back to Trade Fair</p>
+                <form>
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="forget">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <div>
+                        <button type="submit">Log In</button>
+                    </div>
+                    <div>
+                        <p>Or</p>
+                    </div>
+                    <div>
+                        <button type="button" class="google-signin">
+                            <i class="fa-brands fa-google"></i> Log In with Google
+                        </button>
+                    </div>
+                </form>
+                <div class="signup">
+                    <p>Don't have an account?</p>
+                    <button onclick="window.location.href='signup.html'">Sign Up</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Fair Login</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/c85664c924.js" crossorigin="anonymous"></script>
+</head>
+<button><a href="index.html">Back To Home</a></button>
+<body>
+    <div class="flex-container">
+        <section class="picture">
+            <img src="images/people.svg" alt="" class="right">
+            <h1>TRADE NEAR, TRADE FAR, TRADE HERE!</h1>
+        </section>
+        <section class="login-container">
+            <div class="logo">
+                <img src="images/Logo.svg" alt="Company Logo">
+            </div>
+            <div>
+                <p>Welcome to Trade Fair</p>
+                <form>
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div>
+                        <label for="phone number">Tel</label>
+                        <input type="tel" id="tel" name="tel" required>
+
+                    </div>
+                    <div>
+                        <label for="town">Town</label>
+                        <select id="town" name="town" required>
+                            <option value="">Select a town</option>
+                            <option value="Douala">Douala</option>
+                            <option value="Yaoundé">Yaoundé</option>
+                            <option value="Bamenda">Bamenda</option>
+                            <option value="Bafoussam">Bafoussam</option>
+                            <option value="Garoua">Garoua</option>
+                            <option value="Maroua">Maroua</option>
+                            <option value="Ngaoundéré">Ngaoundéré</option>
+                            <option value="Kumba">Kumba</option>
+                            <option value="Buea">Buea</option>
+                            <option value="Ebolowa">Ebolowa</option>
+                        </select>
+                    </div>
+                    
+                    <div class="forget">
+                        <a  href="#">Forgot password?</a>
+                    </div>
+                    <div class="forget">
+                        <button type="submit">Sign Up</button>
+                    </div>
+                    <div>
+                        <p>Or</p>
+                    </div>
+                    <div>
+                        <button type="button" class="google-signin">
+                            <i class="fa-brands fa-google"></i> Sign In with Google
+                        </button>
+                    </div>
+                </form>
+                <div class="login">
+                    <p>Have an account already?</p>
+                    <button onclick="window.location.href='login.html'">Log In</button>
+                </div>
+               
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
